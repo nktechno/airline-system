@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exit Page - Airline Reservation System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="message-box">
+            <h1>Thank you for using our Airline Reservation System!</h1>
+            <p>You have successfully exited the system.</p>
+            <p>Safe travels!</p>
+            <div class="actions">
+                <button onclick="redirectHome()">Go to Homepage</button>
+                <button onclick="reloadPage()">Reload Page</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<style>
+    /* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.message-box h1 {
+    color: #2e8b57;
+    margin-bottom: 15px;
+}
+
+.message-box p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.actions button {
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.actions button:hover {
+    background-color: #218c46;
+}
+
+.actions button:focus {
+    outline: none;
+}
+
+</style>
+<script>
+    // Function to redirect user to the homepage
+function redirectHome() {
+    // You can replace the URL with your homepage URL
+    window.location.href = 'index.html';  // Redirect to the homepage (example)
+}
+
+// Function to reload the page
+function reloadPage() {
+    window.location.reload();  // Reload the current page
+}
+
+</script>

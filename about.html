@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Airline Reservation System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Airline XYZ</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="check-flight.html">Check Flights</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-container">
+        <h2>About Us</h2>
+        <p>At Airline XYZ, we strive to provide the safest, most affordable, and most enjoyable air travel experiences for our customers.</p>
+
+        <div class="mission">
+            <h3>Our Mission</h3>
+            <p>To connect people around the world with affordable, comfortable, and safe air travel.</p>
+        </div>
+        <div class="history">
+            <h3>Our History</h3>
+            <p>Founded in 1990, Airline XYZ has grown into a global leader in air travel with over 100 destinations worldwide.</p>
+        </div>
+        <div class="services">
+            <h3>Our Services</h3>
+            <ul>
+                <li>Low-cost airfares</li>
+                <li>In-flight entertainment</li>
+                <li>Priority booking and business class services</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Airline XYZ | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
+<style>
+    /* General reset for consistent styles across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #4CAF50;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.cta-btn {
+    background-color: #fff;
+    color: #4CAF50;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.cta-btn:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.services h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.service {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.service h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.service p {
+    font-size: 16px;
+}
+
+/* About Us Section */
+.about-container {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about-container h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.mission, .history, .services {
+    margin: 20px 0;
+}
+
+.mission h3, .history h3, .services h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* Contact Section */
+.contact-container {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.contact-container h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact-container form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-container label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact-container input, .contact-container textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.contact-container button {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-container button:hover {
+    background-color: #45a049;
+}
+
+/* Flight Search Section */
+.flight-container {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.flight-container h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.flight-container form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.flight-container label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.flight-container input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.flight-container button {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.flight-container button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .cta-btn {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+
+    .service {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about-container h2, .services h2 {
+        font-size: 28px;
+    }
+
+    .contact-container form {
+        width: 100%;
+    }
+
+    .flight-container form {
+        width: 100%;
+    }
+}
+
+</style>
+<script>
+    // Basic form validation for flight check
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('.flight-container form');
+
+    form.addEventListener('submit', function(event) {
+        const departure = document.getElementById('departure').value;
+        const destination = document.getElementById('destination').value;
+        const passengers = document.getElementById('passengers').value;
+
+        if (!departure || !destination || !passengers) {
+            alert('Please fill in all fields');
+            event.preventDefault();
+        }
+    });
+});
+
+// Basic form validation for contact page
+const contactForm = document.querySelector('.contact-container form');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(event) {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        if (!name || !email || !message) {
+            alert('All fields must be filled!');
+            event.preventDefault();
+        }
+    });
+}
+
+</script>

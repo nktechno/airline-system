@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Flight Availability - Airline Reservation System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Airline XYZ</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="check-flight.html">Check Flights</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Check Flight Form Section -->
+    <section class="flight-container">
+        <h2>Check Flight Availability</h2>
+        <form id="flight-form">
+            <div class="form-group">
+                <label for="departure">Departure Airport</label>
+                <input type="text" id="departure" name="departure" placeholder="Enter departure city/airport" required>
+            </div>
+
+            <div class="form-group">
+                <label for="destination">Destination Airport</label>
+                <input type="text" id="destination" name="destination" placeholder="Enter destination city/airport" required>
+            </div>
+
+            <div class="form-group">
+                <label for="departure-date">Departure Date</label>
+                <input type="date" id="departure-date" name="departure-date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="return-date">Return Date (optional)</label>
+                <input type="date" id="return-date" name="return-date">
+            </div>
+
+            <div class="form-group">
+                <label for="passengers">Number of Passengers</label>
+                <input type="number" id="passengers" name="passengers" min="1" value="1" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Check Availability</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Airline XYZ | All Rights Reserved</p>
+    </footer>
+
+    <!-- JavaScript -->
+ 
+<style>
+    /* General reset for consistent styles across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Flight Form Section */
+.flight-container {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.flight-container h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.form-group label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.submit-btn {
+    padding: 12px 30px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    header .logo h1 {
+        font-size: 28px;
+    }
+
+    .flight-container h2 {
+        font-size: 28px;
+    }
+
+    .form-group input {
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+</style>
+<script>
+    // JavaScript for handling the flight search form submission
+document.addEventListener('DOMContentLoaded', function () {
+    const flightForm = document.getElementById('flight-form');
+
+    flightForm.addEventListener('submit', function (event) {
+        event.preventDefault();  // Prevent form submission to simulate checking availability
+
+        const departure = document.getElementById('departure').value;
+        const destination = document.getElementById('destination').value;
+        const departureDate = document.getElementById('departure-date').value;
+        const returnDate = document.getElementById('return-date').value;
+        const passengers = document.getElementById('passengers').value;
+
+        // Check if all required fields are filled
+        if (!departure || !destination || !departureDate || !passengers) {
+            alert('Please fill in all required fields!');
+            return;
+        }
+
+        // Display the flight details (simulating the search result for now)
+        alert(`Searching for flights from ${departure} to ${destination} on ${departureDate} for ${passengers} passenger(s).${returnDate ? ' Returning on ' + returnDate : ''}`);
+    });
+});
+
+</script>
